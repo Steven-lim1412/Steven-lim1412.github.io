@@ -220,7 +220,7 @@
         var serializedDataLayer = $.param(dataLayer);
         $.ajax({
             url: 'https://collect.tealiumiq.com/event',
-            type: 'POST',
+            type: 'GET',
             data: serializedDataLayer,
             success: function (result) {
                 alert("Your bookmark has been saved");
